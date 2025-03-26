@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign-up Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .btn-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .btn {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        .btn-light {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        .btn-dark {
+            background-color: black;
+            color: white;
+        }
+        .tiers {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .tier {
+            flex: 1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 5px;
+            background-color: #f9f9f9;
+        }
+        .tier img {
+            width: 30px;
+            height: 30px;
+        }
+        .recent-activity {
+            margin-top: 20px;
+        }
+        .activity-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .activity {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 5px;
+            background-color: #f9f9f9;
+        }
+        .activity img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .activity-info {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .hashtags {
+            color: gray;
+            font-size: 12px;
+        }
+        .social-login {
+            margin-top: 20px;
+        }
+        .social-login button {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px 0;
+            cursor: pointer;
+        }
+        .facebook {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        .google {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login/Sign-up</h2>
+
+        <div class="input-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email address">
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" placeholder="Enter your password">
+        </div>
+
+        <div class="btn-group">
+            <button class="btn btn-light">Sign Up</button>
+            <button class="btn btn-dark">Login</button>
+        </div>
+
+        <div class="tiers">
+            <div class="tier">
+                <img src="beginner-icon.png" alt="Beginner">
+                <p>Beginner</p>
+            </div>
+            <div class="tier">
+                <img src="enthusiast-icon.png" alt="Enthusiast">
+                <p>Enthusiast</p>
+            </div>
+            <div class="tier">
+                <img src="pro-icon.png" alt="Pro">
+                <p>Pro</p>
+            </div>
+        </div>
+
+        <div class="recent-activity">
+            <h3>Recent Activity</h3>
+            <div class="activity-container">
+                <div class="activity">
+                    <img src="flowers.png" alt="Nature">
+                    <div class="activity-info">
+                        <p>Enjoying the view!</p>
+                        <span class="hashtags">#travel #photography</span>
+                        <p><strong>JohnDoe</strong></p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="coffee.png" alt="Coffee">
+                    <div class="activity-info">
+                        <p>Starting the day right!</p>
+                        <span class="hashtags">#coffee #morning</span>
+                        <p><strong>JaneSmith</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="social-login">
+            <button class="facebook">Continue with Facebook</button>
+            <button class="google">Continue with Google</button>
+        </div>
+
+    </div>
+
+</body>
+</html>

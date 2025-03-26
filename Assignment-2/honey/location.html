@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .featured-spots {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .spot {
+            flex: 1;
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .spot img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+        }
+        .spot-info {
+            padding: 10px;
+            text-align: left;
+            font-size: 14px;
+        }
+        .community-shots {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .profile img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        .community-post {
+            margin-top: 10px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .community-post img {
+            width: 100%;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+        .post-info {
+            padding: 5px 0;
+            font-size: 14px;
+        }
+        .tags {
+            font-size: 12px;
+            color: gray;
+        }
+        .btn {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Location Recommendations</h2>
+
+        <h3>Featured Spots</h3>
+        <div class="featured-spots">
+            <div class="spot">
+                <img src="sunset-point.png" alt="Sunset Point">
+                <div class="spot-info">
+                    <strong>Sunset Point</strong><br>
+                    5 miles away
+                </div>
+            </div>
+            <div class="spot">
+                <img src="midnight-city.png" alt="Midnight City">
+                <div class="spot-info">
+                    <strong>Midnight City</strong><br>
+                    2 miles away
+                </div>
+            </div>
+        </div>
+
+        <div class="community-shots">
+            <h3>Community Shots</h3>
+            <div class="profile">
+                <img src="profile-pic.png" alt="User">
+                <div>
+                    <strong>photoguru123</strong><br>
+                    1 hour ago • Central Park
+                </div>
+            </div>
+
+            <div class="community-post">
+                <img src="tree-photo.png" alt="Tree in sunlight">
+                <div class="post-info">
+                    <strong>Hiking in the wilderness</strong><br>
+                    <span class="tags">Nature • Adventure</span>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn">Explore More</button>
+    </div>
+</body>
+</html>

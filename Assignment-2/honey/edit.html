@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editing Suggestions Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            font-size: 18px;
+        }
+
+        .header img {
+            width: 20px;
+            margin-right: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .button.black {
+            background: #000;
+            color: #fff;
+            border: none;
+        }
+
+        .edit-options {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .edit-option {
+            text-align: center;
+            flex: 1;
+            padding: 10px;
+        }
+
+        .edit-option img {
+            width: 40px;
+            display: block;
+            margin: auto;
+        }
+
+        .edit-option p {
+            margin-top: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <img src="back-arrow.png" alt="Back">
+            <span>Editing Suggestions Page</span>
+        </div>
+
+        <!-- Image -->
+        <div class="image-container">
+            <img src="main-image.png" alt="Editing Preview">
+        </div>
+
+        <!-- Buttons -->
+        <button class="button">Reset</button>
+        <button class="button">Save</button>
+        <button class="button black">Apply Changes</button>
+
+        <!-- Editing Options -->
+        <div class="edit-options">
+            <div class="edit-option">
+                <img src="contrast-icon.png" alt="Contrast">
+                <p>Contrast</p>
+            </div>
+            <div class="edit-option">
+                <img src="brightness-icon.png" alt="Brightness">
+                <p>Brightness</p>
+            </div>
+            <div class="edit-option">
+                <img src="crop-icon.png" alt="Cropping">
+                <p>Cropping</p>
+            </div>
+        </div>
+
+        <!-- More Buttons -->
+        <button class="button">Save to Gallery</button>
+        <button class="button">Discard</button>
+        <button class="button black">Share Edited Photo</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Photography Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+
+        .dashboard {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h2 {
+            font-size: 22px;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .quick-access {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .quick-access div {
+            flex: 1;
+            padding: 15px;
+            background: #f1f1f1;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .quick-access img {
+            width: 30px;
+        }
+
+        .latest-updates {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .updates-info {
+            display: flex;
+            gap: 10px;
+        }
+
+        .updates-info img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .performance {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .performance div {
+            flex: 1;
+            padding: 15px;
+            background: #fff;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .community {
+            margin-top: 20px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .community img {
+            width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .bottom-nav div {
+            text-align: center;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- Header -->
+        <div class="header">
+            <h2>Dashboard</h2>
+            <div class="user-info">
+                <img src="user-profile.png" alt="User">
+                <p>User <br> <small>Dashboard Overview</small></p>
+            </div>
+        </div>
+
+        <!-- Quick Access -->
+        <div class="quick-access">
+            <div>
+                <img src="photo-tips.png" alt="Tips">
+                Photo Tips
+            </div>
+            <div>
+                <img src="editing-suggestions.png" alt="Editing">
+                Editing Suggestions
+            </div>
+        </div>
+
+        <!-- Latest Updates -->
+        <div class="latest-updates">
+            <div class="updates-info">
+                <img src="photo-editing-tips.png" alt="Edit">
+                <div>
+                    <b>Photo Editing Tips</b><br>
+                    <small>Enhance your photography skills</small><br>
+                    <small>Learn how to adjust lighting and colors to make your photos pop.</small>
+                </div>
+            </div>
+            <button>Explore →</button>
+        </div>
+
+        <!-- Performance Overview -->
+        <div class="performance">
+            <div>
+                <h3>Photos Edited</h3>
+                <h2>256</h2>
+                <small>+12%</small>
+            </div>
+            <div>
+                <h3>Locations Visited</h3>
+                <h2>18</h2>
+                <small>-5%</small>
+            </div>
+        </div>
+
+        <!-- Community Highlights -->
+        <div class="community">
+            <p><b>Community Highlights</b></p>
+            <small>Traveler - 2 hours ago - Paris, France</small>
+            <img src="eiffel-tower.png" alt="Community">
+        </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <div class="bottom-nav">
+        <div>🏠 <br>Home</div>
+        <div>🔍 <br>Search</div>
+        <div>📊 <br>Stats</div>
+    </div>
+
+</body>
+</html>
